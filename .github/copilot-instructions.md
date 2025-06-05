@@ -4,6 +4,7 @@
 
 ## Code Quality Requirements
 
+- Create and update a `progress.md` file to track the overall progress of teh project and document the architecture decisions.
 - Code must be clean, readable, and maintainable.
 - Follow standard TypeScript conventions and best practices.
 - Use TypeScript's type system effectively to catch errors at compile time.
@@ -21,7 +22,6 @@
 - Avoid using inline styles; use CSS modules or styled-components for styling.
 - Use Material UI components where appropriate for consistency and ease of use.
 - Use Material UI's theming capabilities to maintain a consistent look and feel across the application.
-
 - Write unit tests for critical functions and components using `jest` with `@testing-library/react`.
 - Write end-to-end tests using `playwright`.
 - Use `const` and `let` instead of `var`.
@@ -31,3 +31,6 @@
 - Use `useEffect` and `useMemo` hooks to optimize performance where necessary.
 - This project uses Next.js app router, so follow its conventions for file structure and routing.
 - Use TypeScript interfaces and types to define props and state for components.
+- Use Redux Toolkit for state management, based on the documentation at https://redux.js.org/usage/nextjs.
+- Use Spotify API or YouTube API for music tracks.
+- Use Prisma Postgres for the database.

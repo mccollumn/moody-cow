@@ -1,8 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
+import moodReducer from "./features/moodSlice";
+import musicReducer from "./features/musicSlice";
+import userReducer from "./features/userSlice";
 
 export const makeStore = () => {
   return configureStore({
-    reducer: {},
+    reducer: {
+      mood: moodReducer,
+      music: musicReducer,
+      user: userReducer,
+    },
   });
 };
 

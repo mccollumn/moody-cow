@@ -18,6 +18,15 @@ const config: Config = {
   // Stop running tests after `n` failures
   // bail: 0,
 
+  // Exclude Playwright tests from Jest
+  testPathIgnorePatterns: [
+    "<rootDir>/.next/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/tests/e2e/",
+    "<rootDir>/tests-examples/",
+    ".*\\.spec\\.ts$",
+  ],
+
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/tmp/jest_rs",
 
